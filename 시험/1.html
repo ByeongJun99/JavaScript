@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1번 문제</title>
+    <style>
+        table{
+            width: 897px;
+            background-color: #fffee2;
+            padding: 0px;
+        }
+        .row1{
+            width: 10px;
+        }
+        .row2{
+            width: 150px;
+        }
+        .row3{
+            width: 20px;
+        }
+        .row4{
+            width: 50px;
+        }
+        .row5{
+            width: 50px;
+        }
+        .row6{
+            width: 25px;
+        }
+        .colTop, .colBottom{
+            background-color: #fe9f7d;
+            color: white;
+        }
+        table button{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>포트폴리오 문제</h1>
+    <hr><br>
+    <form action="insert.no" method="post" style="width: 900px;">
+        <fieldset>
+            <legend>공지사항 작성하기</legend>
+            <div style="height: 30px;">
+                <div style="float: left;">
+                    <b style="margin: 0px 18.5px;">제목</b>
+                </div>
+                <div style="float: left;">
+                    <input type="text" name="title" placeholder="제목을 입력하시오." style="width: 303px;" required>
+                </div>
+            </div>
+            <div style="height: 120px;">
+                <div style="float: left; height: 50%; padding-top: 45px;">
+                    <b style="margin: 0px 18.5px;">내용</b>
+                </div>
+                <div style="float: left; height: 100%;">
+                    <textarea name="" id="" cols="40" rows="7" placeholder="내용을 입력하시오." required></textarea>
+                </div>
+            </div>
+            <div>
+                <div style="float: left;">
+                    <b style="margin-right: 5px;">첨부파일</b>
+                </div>
+                <div style="float: left;">
+                    <input type="file" name="uploadFile">
+                </div>
+            </div>
+            <br>
+            <br>
+            <button style="margin-left: 130px;">작성하기</button>
+        </fieldset>
+    </form>
+    <br><hr><br>
+    <table border="1">
+        <tr class="colTop">
+            <th class="row1">번호</th>
+            <th colspan="2">제목</th>
+            <th class="row4">작성자</th>
+            <th class="row5">작성일</th>
+            <th class="row6">조회수</th>
+        </tr>
+        <tr>
+            <td class="row1">9</td>
+            <td class="row2">공지사항 제목 9</td>
+            <td class="row3"><button>바로가기</button></td>
+            <td class="row4">user01</td>
+            <td class="row5">2021-03-29</td>
+            <td class="row6">34</td>
+        </tr>
+        <tr>
+            <td class="row1">6</td>
+            <td class="row2">공지사항 제목 6</td>
+            <td class="row3"><button>바로가기</button></td>
+            <td class="row4">answ445</td>
+            <td class="row5">2021-03-12</td>
+            <td class="row6">67</td>
+        </tr>
+        <tr>
+            <td class="row1">3</td>
+            <td class="row2">공지사항 제목 3</td>
+            <td class="row3"><button>바로가기</button></td>
+            <td class="row4">testg12</td>
+            <td class="row5">2021-03-01</td>
+            <td class="row6">98</td>
+        </tr>
+        <tr>
+            <td class="row1">2</td>
+            <td class="row2">공지사항 제목 2</td>
+            <td class="row3"><button>바로가기</button></td>
+            <td class="row4">palwe3</td>
+            <td class="row5">2021-01-02</td>
+            <td class="row6">85</td>
+        </tr>
+        <tr>
+            <td class="row1">1</td>
+            <td class="row2">공지사항 제목 1</td>
+            <td class="row3"><button>바로가기</button></td>
+            <td class="row4">xml23</td>
+            <td class="row5">2020-12-24</td>
+            <td class="row6">124</td>
+        </tr>
+        <tr class="colBottom">
+            <th colspan="4">전체공지사항 갯수</th>
+            <th colspan="2">5개</th>
+        </tr>
+    </table>
+</body>
+</html>
